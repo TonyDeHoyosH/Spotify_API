@@ -1,0 +1,19 @@
+ktor:
+  application:
+    modules:
+      - com.example.ApplicationKt.module
+  deployment:
+    port: 3000
+
+jwt:
+  domain: "https://jwt-provider-domain/"
+  audience: "jwt-audience"
+  realm: "ktor sample app"
+  secret: "tu-secreto-super-seguro-cambiar-en-produccion"
+
+database:
+  driverClassName: "org.postgresql.Driver"
+  jdbcURL: "jdbc:postgresql://localhost:5432/reproductorweb_db"
+  username: "postgres"
+  password: "1234"
+  maxPoolSize: 10
